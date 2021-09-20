@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background-image: linear-gradient(rgb(176, 255, 176),rgb(245, 245, 99));
+}
+
+
+
+/* Header */
+.header{
+    padding: 15px;
+}
+.header{
+    width: 100%;
+    display: flex;
+}
+
+.header h2{
+    
+    margin-left: 45px;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+.barra{
+    width: 500px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 105px;
+    border: 1px solid black;
+}
+.buscar{
+    width: 100px;
+    height: 40px;
+    background-color: #E6F2E3;
+    margin-top: 25px;
+}
+.buscar:hover{
+    background-color: rgb(132, 241, 241);
+}
+.buscar:active{
+    background-color: #E6F2E3;
+}
+
+.botonusuario{
+    border: 1px solid black;
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 80px;
+    height: 30px;
+    background-color: #85EEC9;
+}
+
+.botonusuario:hover{
+    background-color: rgb(132, 241, 241);
+}
+.botonusuario:active{
+    background-color: #E6F2E3;
+}
+
+.header img{
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+/*
+.infoperfil{
+    background-color: white;
+}
+.infoperfil img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+.relleno2{
+    display: block;
+}
+*/
+/* Menu */
+.menu{
+    width: 25%;
+    float: left;
+    padding: 15px;
+}
+.opcionesSubastas{
+    width: 221px;
+    height: 25px;
+    margin-left: 20px;
+    border-style: solid;
+    display: block;
+    border-width: 1px;
+    border-color: black;
+    background-color: #ECF097;
+}
+.opcionesSubastas:hover{
+    background-color: rgb(132, 241, 241);
+}
+.opcionesSubastas:active{
+    background-color: #ECF097;
+}
+.categorias{
+    margin-top: 50px;
+    padding: 20px;
+    width: 220px;
+    background-color: #59DD59;
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 20px
+}
+.botonmenu{
+    width: 220px;
+    height: 40px;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    border-color: black;
+    background-color: #85EEC9;
+}
+.botonmenu:hover{
+    background-color: rgb(132, 241, 241);
+}
+
+.botonmenu:active{
+    background-color: #85EEC9;
+}
+
+/* Main */
+.main{
+    width: 75%;
+    float: left;
+    padding: 15px;
+}
+.imagenes>img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.imagenes{
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.relleno{
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.relleno span{
+    border: 1px solid black;
+    padding: 10px;
+    display: block;
+}
+
+.activo1{
+    background-color: green;
+}
+.activo2{
+    background-color: red;
+}

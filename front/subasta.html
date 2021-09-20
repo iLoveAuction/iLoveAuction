@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/login.css">
+
+    <style type="text/css">
+        #scroll1 {
+            width: 100%;
+            background: #ffffff;
+            direction: ltr;
+        }
+
+        #scroll1Frase {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            height: 55px;
+            margin-bottom: 0px;
+            margin-top: 3px;
+            text-transform: uppercase;
+            background-color: #4644ab;
+            border-color: #4644ab;
+            border-style: solid;
+            border-radius: 5px;
+            width: 200px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+    <title>iLoveAuction</title>
+
+</head>
+
+<body >
+
+    <div class="container-fluid py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 font-weight-bold">iLoveAuction</h1>
+            <p class="font-italic text-muted mb-0">pagina web dedicada al comercio de subastas con cientos de productos para ofertar.</p>
+        </header>
+
+        <div class="row pb-5 mb-4">
+            <div class="col-md-6">
+                <h3 id="nombre_evento"></h3>
+                <img alt="" src="img/sub.png" class="img-fluid d-block mx-auto">
+                <p id="descripcion_evento"></p>
+            </div>
+            <div class="col-md-6">
+                <div id="scroll1">
+                    <span id="scroll1Frase">
+
+                    </span>
+                </div>
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                Nombre
+                            </th>
+                            <th>
+                                Fecha
+                            </th>
+                            <th>
+                                Cantidad
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="table-success" >
+                            <td>1</td>
+                            <td id="name1"></td>
+                            <td id="fecha1"></td>
+                            <td id="val1"></td>
+                        </tr>
+
+                        <tr class="table-warning" id="sec">
+                            <td>2</td>
+                            <td id="name2"></td>
+                            <td id="fecha2"></td>
+                            <td id="val2"></td>
+                        </tr>
+
+                        <tr class="table-warning" id="trd">
+                            <td>3</td>
+                            <td id="name3"></td>
+                            <td id="fecha3"></td>
+                            <td id="val3"></td>
+                        </tr>
+
+                        <tr class="table-danger" id="lst">
+                            <td>4</td>
+                            <td id="name4"></td>
+                            <td id="fecha4"></td>
+                            <td id="val4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <input id="cantidad" type="number">
+                <button type="button" class="btn btn-success" onclick="socket.ofertar()">
+                    Ofertar
+                </button>
+                <button type="button" class="volver" name="volver" id="volver" onclick="window.location='./PaginaPrincipal.html'">
+                    <p style="color: #ffffff; text-align: center;">Volver </p> 
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
