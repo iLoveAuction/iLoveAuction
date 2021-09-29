@@ -1,16 +1,21 @@
 package iLoveAuction.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Date;
 
+@Document(collection="Usuarios")
 public class Oferta {
-    
 
+    @Id
     private String id;
     
     private int cantidad;
     private String idUsuario;
     private String idEvento;
     private Date fecha;
+
 
     public Oferta(String id, int cantidad, String idUsuario, String idEvento, Date fecha) {
         this.id = id;
