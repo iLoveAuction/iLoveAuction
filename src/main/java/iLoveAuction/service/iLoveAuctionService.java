@@ -72,4 +72,15 @@ public class iLoveAuctionService {
         }
     }
 
+
+    public Subasta findEventById(String id) throws ServiceNotFoundException{
+
+           Optional<Subasta> evento = subastaRepository.findById(id);
+
+        if(evento.isPresent()){
+            return evento.get();
+        } else {
+            throw new ServiceNotFoundException("Not found usuario");
+        }
+    }
 }

@@ -99,6 +99,17 @@ public class iLoveAuctionController {
             return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
         }
     }
+
+    @RequestMapping(value="/consultar/subasta/{id}", method = RequestMethod.GET)
+    public ResponseEntity<?> getEventById(@PathVariable("id") String id){
+        try {
+            Subasta evento = service.findEventById(id);
+            return new ResponseEntity<>(evento,HttpStatus.ACCEPTED);
+        } catch (Exception e) {
+            Logger.getLogger(iLoveAuctionController.class.getName()).log(Level.SEVERE, null, e);
+            return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
+        }
+    }
     }
 
 
