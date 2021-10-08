@@ -159,7 +159,7 @@ var controlador = (function () {
     
     var cerrarSesion = function(){
         document.cookie = "usuarioActual=; max-age=0";
-        location.href = "login.html";
+        location.href = "index.html";
     };
 
     return {

@@ -9,7 +9,7 @@ var user = (function(){
             $("#fecha").text(UserModule.getFecha());
             
         } else {
-            location.href = "login.html";
+            location.href = "index.html";
         }
     };
     
