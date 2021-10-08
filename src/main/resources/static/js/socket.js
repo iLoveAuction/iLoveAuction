@@ -101,8 +101,8 @@ var socket = (function (){
             trs[i][2].innerText=json[i].cantidad;
             i++;
         }
-    }
 
+    }
 
     return{
         
