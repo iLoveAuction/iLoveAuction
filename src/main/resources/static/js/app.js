@@ -111,7 +111,7 @@ var controlador = (function () {
             var s = "<div class='col-lg-3 col-md-6 mb-4 mb-lg-0'  >" +
                 "<div class='card rounded shadow-sm border-0' style='margin-bottom: 40px;'>" +
                 "<div class='card-body p-4' >" +
-                "<img src='css/sub.png' alt='' class='img-fluid d-block mx-auto mb-3'>" +
+                "<img src='img/sub.png' alt='' class='img-fluid d-block mx-auto mb-3'>" +
                 "<h5 class='card-title'>" + name + "</h5>" +
                 "<p class='small text-muted font-italic'>" + description + "</p>" +
                 "<input onclick=\"window.location='./subasta.html?value=" + id + "';\"  type='button' value='ingresar' style='margin-left: 80px; margin-right: auto;'>" +
