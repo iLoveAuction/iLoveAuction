@@ -101,13 +101,9 @@ var socket = (function (){
             trs[i][2].innerText=json[i].cantidad;
             i++;
         }
-        reload;
     }
 
-    var reload = setTimeout(function(){
-        $( "#table table-hover table-bordered" ).load( "your-current-page.html #mytable" );
-    }, 2000);
-       
+
     return{
         
         init: function () {
