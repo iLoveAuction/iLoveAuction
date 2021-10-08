@@ -5,6 +5,14 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/app.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/read.js"></script>
+    <script type="text/javascript">
+        if(UserModule.set()){
+            location.href = "PaginaPrincipal.html";
+        }
+    </script>
 </head>
 
 <body>
@@ -12,12 +20,12 @@
         <form>
             <h2>iLoveAuction</h2>
             <h1>Bienvenido</h1>
-            
+            <p id="pasw" style="color: red;font-weight: bold;align-content: center"></p>
             <input class="controls" id="usuario" name="usuario" type="text" value="" placeholder="Usuario" required></input>
             
             <input class="controls" id="contrasena" type="password" name="contrasena" value="" placeholder="Contraseña"
                 required></input>
-            <input class="buttons" type="button" value="Login" onclick="window.location='PaginaPrincipal.html';"  ></input>
+            <input class="buttons" type="button" value="Login" onclick="controlador.ingresar()"  ></input>
             
             <p><a>¿Nuevo usuario?</a></p>
 
