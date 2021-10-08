@@ -30,7 +30,7 @@ var controlador = (function () {
         if (validarEmail(data.email)) {
             if (validarEdad(data.date)) {
                 if (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/i.test(data.password)) {
-                    fetch("http://localhost:8080/iloveauction/registrar/usuario", {
+                    fetch("https://iloveaution.herokuapp.com/iloveauction/registrar/usuario", {
 
                             method: "POST",
                             headers: {
@@ -71,7 +71,7 @@ var controlador = (function () {
         data.initialOffer = ofertaInicial;
         data.usuario = idUsuario;
 
-        fetch("http://localhost:8080/iloveauction/crear/subasta", {
+        fetch("https://iloveaution.herokuapp.com/iloveauction/crear/subasta", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
@@ -87,7 +87,7 @@ var controlador = (function () {
 
     var init = function () { 
         
-        fetch("http://localhost:8080/iloveauction/consultar/subastas")
+        fetch("https://iloveaution.herokuapp.com/iloveauction/consultar/subastas")
             .then(response => response.json())
             .then(json => verEventos(json))
             .catch(err => {
@@ -139,7 +139,7 @@ var controlador = (function () {
         var contrasena = document.getElementById("contrasena").value;
         if (validarEmail(usuario)) {
 
-            fetch("http://localhost:8080/iloveauction/usuario/" + usuario,{method: 'GET',
+            fetch("https://iloveaution.herokuapp.com/iloveauction/usuario/" + usuario,{method: 'GET',
                 mode: 'cors',
                 credentials: 'include'})
                 .then(response => response.json())
