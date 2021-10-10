@@ -174,3 +174,7 @@ body{
 .activo2{
     background-color: red;
 }
+font-weight-bold-mb-2,font-italic text-muted mb-4{
+    width: 90%;
+    margin-left: 20px;
+}
