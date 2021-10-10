@@ -91,7 +91,7 @@ body{
     padding: 15px;
 }
 .opcionesSubastas{
-    width: 221px;
+    width: 15%;
     height: 25px;
     margin-left: 20px;
     border-style: solid;
@@ -109,7 +109,7 @@ body{
 .categorias{
     margin-top: 50px;
     padding: 20px;
-    width: 220px;
+    width: 15%;
     background-color: #59DD59;
     text-align: center;
     border: 1px solid black;
